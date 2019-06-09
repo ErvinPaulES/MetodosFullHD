@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--Diseño Bootstarp-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <!--Diseño Css-->
+    <link rel="stylesheet" type="text/css" href="/css/función2.css" />
+    <title>Newton-Raphson</title>
+</head>
+<body background="/fondohd3.jpg" style="background-repeat: no-repeat; background-position: center down;">
+    <div class="row">
+        <div id="jumbo" class="col-md-12 text-center">
+    <h1>Método de Newton-Raphson</h1>
+    <h3>f(x)= x^3-x+1 </h3>
+    <h3>f'(x) = 3x^2-1</h3> 
+    <form class="needs-validation" id="form" novalidate>
+    <label for="valorInicial">Valor Inicial:</label>
+    <input type="number" id="valorInicial" placeholder="x" required>
+    <div class="valid-feedback">Correcto</div>
+    <div class="invalid-feedback">Este campo es Obligatorio</div>
+    <br>
+    <br>
+    <label for="iteraciones">Iteraciones(1-8):</label>
+    <input type="number"id="iteraciones" placeholder="0">
+  </form>
+    <br>
+    <br>
+    <button class="btn btn-success mb-4" type="button" id="btnDos">Calcular</button>
+
+</div>
+    <!-- Tabla -->
+    <div  class="col-md-12">
+            <table  class="table">
+              <thead>
+                <tr>
+                  <th>iteración</th>
+                  <th>Aproximación</th>
+                  <th>Porcentaje</th>
+
+                </tr>
+              </thead>
+              <tbody id="tabla"></tbody>
+            </table>
+          </div>
+        </div>
+    <!--Cierra tabla-->
+</body>
+ <script src="/js/funcion2.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+</html>
