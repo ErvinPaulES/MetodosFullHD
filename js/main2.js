@@ -33,6 +33,11 @@ function calculate(){
     }
     console.log('aproximacion: ' + xnNew);
     graficar();
+  }else{
+    window.Swal.fire({
+      type:'error',
+      title:'Error',
+      text:'llene los campos necesarios'})
   }
 }
 
